@@ -1,0 +1,88 @@
+body {
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    background-color: #0e0f13;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    font-family: 'Josefin Sans'
+}
+
+form {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    background-color: #444557;
+    padding: 1rem 3rem 1rem 3rem;
+    border-radius: 5%;
+    box-shadow: 0rem 0rem 1rem #02b3ff;
+    position: relative;
+    overflow: hidden;
+}
+
+#buttonMailTo {
+    opacity: 0;
+}
+
+h3 {
+    color: black;
+    z-index: 1;
+}
+
+label {
+    margin-top: 5%;
+    color: #02b3ff;
+    z-index: 1;
+}
+
+input, textarea {
+    border: none;
+    border-radius: 2rem;
+    background-color: black;
+    padding: 1rem;
+    resize: none;
+    color: white;
+    caret-color: #02b3ff;
+    outline: none;
+    width: 90%;
+    font-family: 'Josefin Sans';
+    z-index: 1;
+}
+
+input::placeholder, textarea::placeholder {
+    color: #444557;
+}
+
+button {
+    background-color: transparent;
+    border: solid 2px black;
+    border-radius: 1rem;
+    margin: 1rem;
+    padding: 0.5rem;
+    width: 50%;
+    color: #02b3ff;
+    z-index: 1;
+}
+
+.circle {
+    height: 10rem;
+    width: 10rem;
+    position: absolute;
+    background-color: #02b3ff;
+    z-index: 0;
+    filter: blur(2rem);
+}
+
+.circle_1 {
+    top: -2rem;
+    right: -2rem;
+    border-radius: 0% 0% 0% 70%;
+}
+
+.circle_2 {
+    bottom: -2rem;
+    left: -2rem;
+    border-radius: 0% 70% 0% 0%;
+}
